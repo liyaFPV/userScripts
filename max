@@ -1,3 +1,4 @@
 #скрипт для открытия max
 #!/bin/bash
-firefox "https://web.max.ru/"
+nohup firefox "https://web.max.ru/" >/dev/null 2>&1 &
+exit 0

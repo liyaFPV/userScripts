@@ -3,8 +3,8 @@
 
 if [ -z "$*" ]; then
   # если ничего не передано
-  firefox "https://www.youtube.com"
+  nohup firefox "https://www.youtube.com" >/dev/null 2>&1 &
 else
   query=$(echo "$*" | sed 's/ /+/g')
-  firefox "https://www.youtube.com/results?search_query=$query"
+  nohup firefox "https://www.youtube.com/results?search_query=$query" >/dev/null 2>&1 &
 fi

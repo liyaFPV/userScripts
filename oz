@@ -3,8 +3,9 @@
 
 if [ -z "$*" ]; then
   # если ничего не передано
-  firefox "https://www.ozon.ru/"
+
+  nohup firefox "https://www.ozon.ru/" >/dev/null 2>&1 &
 else
   query=$(echo "$*" | sed 's/ /+/g')
-  firefox "https://www.ozon.ru/search/?text=$query"
+  nohup firefox "https://www.ozon.ru/search/?text=$query" >/dev/null 2>&1 &
 fi
