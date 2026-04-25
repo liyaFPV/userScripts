@@ -1,0 +1,3 @@
+#скрипт для открытия max
+#!/bin/bash
+firefox "https://web.max.ru/"

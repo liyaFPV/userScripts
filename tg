@@ -1,0 +1,3 @@
+#скрипт для открытия telegram из flatpak
+#!/bin/bash
+flatpak run org.telegram.desktop
