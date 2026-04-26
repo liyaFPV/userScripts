@@ -1,3 +1,3 @@
 #скрипт для открытие vscode из flatpak
 #!/bin/bash
-flatpak run com.visualstudio.code $1
+nohup flatpak run com.visualstudio.code $1 >/dev/null 2>&1 &
