@@ -3,8 +3,8 @@
 
 if [ -z "$*" ]; then
   # если ничего не передано
-  nohup firefox "https://old.yummyani.me" >/dev/null 2>&1 &
+  nohup firefox "https://ru.yummyani.me/" >/dev/null 2>&1 &
 else
   query=$(echo "$*" | sed 's/ /+/g')
-  nohup firefox "https://old.yummyani.me/search?word=$query" >/dev/null 2>&1 &
+  nohup firefox "https://ru.yummyani.me/catalog?q=$query" >/dev/null 2>&1 &
 fi
